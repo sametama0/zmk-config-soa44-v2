@@ -60,6 +60,11 @@
             bindings = <&kp JP_EQUAL>;
             key-positions = <24 23>;
         };
+
+        hatena {
+            bindings = <&kp QUESTION>;
+            key-positions = <24 35>;
+        };
     };
 
     macros {
