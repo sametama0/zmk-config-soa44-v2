@@ -91,6 +91,7 @@
 &mt LCTRL TAB   &kp A         &kp S         &kp D        &kp F                      &kp G  &kp H             &kp J             &kp K  &kp L      &lt 5 MINUS    &kp ENTER
 &kp LEFT_SHIFT  &kp Z         &kp X         &kp C        &kp V                      &kp B  &kp JP_QUOTE  &kp N             &kp M  &kp COMMA  &kp DOT        &mt SLASH QUESTION
                 &kp LEFT_WIN  &kp LEFT_ALT  &lt 3 SPACE  &lt 2 JP_HANZEN  &mo 6  &lt 4 BACKSPACE   &lt 7 JP_HANZEN                    &kp SEMICOLON
+
             >;
         };
 
@@ -106,18 +107,18 @@
         FUNCTION {
             bindings = <
 &trans  &kp EXCLAMATION  &kp JP_AT  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp JP_CARET  &kp JP_AMPERSAN  &kp JP_ASTERISK  &kp JP_LPAREN  &kp JP_RPAREN  &trans
-&trans  &kp F1           &kp F2       &kp F3    &kp F4      &kp F5       &trans     &kp UP         &trans        &trans                &trans                 &trans
-&trans  &kp F6           &kp F7       &kp F8    &kp F9      &kp F10      &trans     &kp LEFT       &kp DOWN      &kp RIGHT             &trans                 &trans
-        &kp F11          &kp F12      &trans    &trans      &trans       &trans     &trans                                             &trans
+&trans  &kp F1           &kp F2     &kp F3    &kp F4      &kp F5       &trans        &kp UP           &trans           &trans         &trans         &trans
+&trans  &kp F6           &kp F7     &kp F8    &kp F9      &kp F10      &trans        &kp LEFT         &kp DOWN         &kp RIGHT      &trans         &trans
+        &kp F11          &kp F12    &trans    &trans      &trans       &trans        &trans                                           &trans
             >;
         };
 
         NUM {
             bindings = <
-&trans  &kp N1        &kp N2     &kp N3        &kp N4     &kp N5     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp NUMBER_6  &kp N7     &kp N8        &kp N9     &kp N0     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp JP_PLUS      &kp MINUS  &kp JP_ASTERISK  &kp SLASH  &kp JP_EQUAL  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans        &trans     &trans        &trans     &trans     &trans  &trans                  &trans
+&trans  &kp N1        &kp N2     &kp N3           &kp N4     &kp N5        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp NUMBER_6  &kp N7     &kp N8           &kp N9     &kp N0        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp JP_PLUS   &kp MINUS  &kp JP_ASTERISK  &kp SLASH  &kp JP_EQUAL  &trans  &trans  &trans  &trans  &trans  &trans
+        &trans        &trans     &trans           &trans     &trans        &trans  &trans                  &trans
             >;
         };
 
@@ -150,10 +151,10 @@
 
         symbol {
             bindings = <
-&trans  &trans  &trans  &kp JP_PIPE       &kp JP_TILDE  &kp JP_CARET      &kp EXCLAMATION       &kp HASH               &kp DOLLAR      &kp PERCENT      &kp JP_AMPERSAN   &kp JP_AT
-&trans  &trans  &trans  &kp SEMICOLON  &kp JP_COLON  &kp JP_BACKQUOTE         &kp JP_LPAREN  &kp JP_RPAREN  &kp JP_LBRACE  &kp JP_RBRACE  &kp JP_UNDERSCORE  &kp JP_EQUAL
-&trans  &trans  &trans  &trans         &trans     &kp JP_YEN        &kp JP_LBRACKET      &kp JP_RBRACKET      &kp JP_PLUS     &kp MINUS        &kp JP_ASTERISK    &kp SLASH
-        &trans  &trans  &trans         &trans     &trans         &trans                &trans                                                  &trans
+&trans  &trans  &trans  &kp JP_PIPE    &kp JP_TILDE  &kp JP_CARET      &kp EXCLAMATION  &kp HASH         &kp DOLLAR     &kp PERCENT    &kp JP_AMPERSAN    &kp JP_AT
+&trans  &trans  &trans  &kp SEMICOLON  &kp JP_COLON  &kp JP_BACKQUOTE  &kp JP_LPAREN    &kp JP_RPAREN    &kp JP_LBRACE  &kp JP_RBRACE  &kp JP_UNDERSCORE  &kp JP_EQUAL
+&trans  &trans  &trans  &trans         &trans        &kp JP_YEN        &kp JP_LBRACKET  &kp JP_RBRACKET  &kp JP_PLUS    &kp MINUS      &kp JP_ASTERISK    &kp SLASH
+        &trans  &trans  &trans         &trans        &trans            &trans           &trans                                         &trans
             >;
         };
     };
