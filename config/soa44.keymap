@@ -155,10 +155,10 @@
 
         symbol {
             bindings = <
-&trans  &trans  &trans  &kp JP_PIPE    &kp JP_TILDE  &kp JP_CARET      &kp EXCLAMATION  &kp HASH         &kp DOLLAR     &kp PERCENT    &kp JP_AMPERSAND   &kp JP_AT
-&trans  &trans  &trans  &kp SEMICOLON  &kp JP_COLON  &kp JP_BACKQUOTE  &kp JP_LPAREN    &kp JP_RPAREN    &kp JP_LBRACE  &kp JP_RBRACE  &kp JP_UNDERSCORE  &kp JP_EQUAL
-&trans  &trans  &trans  &trans         &trans        &kp JP_YEN        &kp JP_LBRACKET  &kp JP_RBRACKET  &kp JP_PLUS    &kp MINUS      &kp JP_ASTERISK    &kp SLASH
-        &trans  &trans  &trans         &trans        &trans            &trans           &trans                                         &kp SEMICOLON
+&trans  &trans  &trans     &kp JP_PIPE    &kp JP_TILDE  &kp JP_CARET      &kp EXCLAMATION  &kp HASH         &kp DOLLAR     &kp PERCENT    &kp JP_AMPERSAND   &kp JP_AT
+&trans  &trans  JP_DQUOTE  &kp SEMICOLON  &kp JP_COLON  &kp JP_BACKQUOTE  &kp JP_LPAREN    &kp JP_RPAREN    &kp JP_LBRACE  &kp JP_RBRACE  &kp JP_UNDERSCORE  &kp JP_EQUAL
+&trans  &trans  &trans     &trans         &trans        &kp JP_YEN        &kp JP_LBRACKET  &kp JP_RBRACKET  &kp JP_PLUS    &kp MINUS      &kp JP_ASTERISK    &kp SLASH
+        &trans  &trans     &trans         &trans        &trans            &trans           &trans                                         &kp SEMICOLON
             >;
         };
     };
