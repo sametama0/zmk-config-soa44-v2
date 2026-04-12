@@ -27,6 +27,18 @@
     >;
 };
 
+// 縦スクロール固定用
+/ {
+    input_processors {
+        zip_scroll_x_scaler: zip_scroll_x_scaler {
+            compatible = "zmk,input-processor-scaler";
+            #input-processor-cells = <2>;
+            type = <INPUT_EV_REL>;
+            codes = <INPUT_REL_HWHEEL>;
+            track-remainders;
+        };
+    };
+};
 
 / {
     trackball_listener {
@@ -39,7 +51,7 @@
             layers = <5>;
             input-processors =
                 <
-                    &zip_xy_to_scroll_mapper
+                    // &zip_xy_to_scroll_mapper
                     &zip_scroll_x_scaler 0 1
                     &zip_scroll_transform INPUT_TRANSFORM_Y_INVERT
                 >,
