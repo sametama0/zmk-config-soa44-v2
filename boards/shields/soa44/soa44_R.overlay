@@ -19,6 +19,7 @@
 };
 
 &zip_temp_layer {
+    require-prior-idle-ms = <100>; // 振動対策
     excluded-positions = <
         19 // j
         20 // k
@@ -27,25 +28,12 @@
     >;
 };
 
-// 縦スクロール固定用
-/ {
-    input_processors {
-        zip_scroll_x_scaler: zip_scroll_x_scaler {
-            compatible = "zmk,input-processor-scaler";
-            #input-processor-cells = <2>;
-            type = <INPUT_EV_REL>;
-            codes = <INPUT_REL_HWHEEL>;
-            track-remainders;
-        };
-    };
-};
-
 / {
     trackball_listener {
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&trackball>;
-        input-processors = <&zip_temp_layer 1 700>;
+        input-processors = <&zip_temp_layer 1 700 3>;
 
         scroller {
             layers = <5>;
